@@ -1,0 +1,22 @@
+h2 {
+    color: blue;
+}
+
+ .boxmodel {
+    border: 5px solid red;
+    display: inline-block;
+    padding: 20px 10px 5px 15px;
+    margin: 0px 20px;
+    width: 30px;
+    height: 50px;
+} 
+
+p {
+    font-size: 25px;
+    transform: capitalize;
+    text-transform: capitalize;
+}
+
+span {
+    font-size: 2em;
+}

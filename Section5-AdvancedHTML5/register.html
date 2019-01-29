@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <header>
+            <h3>Register</h3>
+        </header>
+        <nav>
+            <a href="index.html">Back to index</a>
+        </nav>
+        <!-- Comments -->
+        <!-- Use GET not POST-->
+        <span>
+            <!-- For Inline Elements
+                Usually used for a small part of html inside a line -->
+        </span>
+        <div>
+
+            <!-- Block-line (ie linebreak before/after) 
+                Divides elements into sections for easier styling-->
+            <form method="GET">
+                <span>First Name:</span><input type="text" name="firstname" required><br>
+                Last Name: <input type="text" name="lastname" required><br>
+                E-mail Address: <input type="email" name="email" required><br>
+                Password: <input type="password" name="password" minlength="5">
+                Birthday: <input type="date" name="birthday"><br>
+                Gender:<br>
+                <input type="radio" name="gender" value="male" checked>Male<br>
+                <input type="radio" name="gender" value="female">Female<br>
+                <input type="radio" name="gender" value="other">Other<br>
+                Pets:<br>
+                <input type="checkbox" name="cat">Cat<br>
+                <input type="checkbox"name="dog">Dog<br>
+                Favorite Color:<br>
+                <select name="color">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select><br>
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear Form">
+            </form>
+        </div>
+    </body>
+</html>

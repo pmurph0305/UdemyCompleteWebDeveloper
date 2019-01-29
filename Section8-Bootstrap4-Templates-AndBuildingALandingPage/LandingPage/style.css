@@ -1,0 +1,56 @@
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: black;
+}
+
+.basic-line {
+  border: 5px solid rgb(92, 104, 103);
+  border-width: 1px;
+}
+
+hr {
+  display: block;
+  width: 50px;
+  margin-top: -1em;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  border-color: rgb(85, 109, 84)
+}
+
+.btn-primary{
+  background-color: rgb(57, 63, 63);
+  border-color: rgb(57, 63, 63);
+  border-radius: 15px;
+  transition: 1s ease;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-primary:hover{
+  background-color: rgba(57, 63, 63, 0.75);
+  border-color: rgba(57, 63, 63, 0.75);
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.image-background {
+  background-image: url(header.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.title-text {
+  color: rgba(245, 245, 245, 0.75);
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 250px;
+  text-transform: uppercase;
+}
