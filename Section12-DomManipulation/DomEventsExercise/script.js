@@ -15,6 +15,10 @@ for (var i =0; i < lis.length; i++) {
 	addRemoveButtonToLiElement(lis[i]);
 }
 
+button.addEventListener("mouseenter", function() {
+	console.log("input mouse enter");
+})
+
 //Event listeners to add items to list on click or enter press.
 button.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);

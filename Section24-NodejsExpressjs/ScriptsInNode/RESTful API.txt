@@ -1,0 +1,17 @@
+RESTful apis.
+
+- Defines a set of functions that developers use to
+perform request and recieve responses via http.
+
+architectural style, approach to communication
+agreed upon rules
+
+GET to recieve resource.
+PUT to change the state or update resource
+POST to create resource
+DELETE to remove resource.
+
+
+RESTful apis are stateless
+calls can be made independently of one another.
+each call contains all data necessary to complete itself successfully.
