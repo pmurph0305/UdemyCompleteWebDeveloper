@@ -1,0 +1,35 @@
+- Relational database.
+
+Similar to SQLite which I used in cs50,
+has similar commands, but no longer using cs50's api for database commands.
+
+Course ran through create/drop table, insert/update/delete rows, and join tables.
+
+Used pgadmin4 for GUI, explored it to see how it all works through that GUI.
+Seems similar, but with more functionality than phpliteadmin which was used in cs50.
+
+Used vscode terminal to execute postgresql commands.
+
+commands:
+must login with: psql -U postgres
+
+\timing shows timing of query results.
+
+
+\c database_name connects to that database.
+\q quit postgres
+
+
+\d for list of TABLES in a database.
+\d table_name for description of table.
+\d+ for more thorough description with additional info.
+\d+ table_name similar to above but for specific table.
+
+\l for list of all DATABASES
+\l+ above with extra info
+
+\dn lists all schemas.
+\dn+ above with extra info.'
+
+\df list all functions
+\df+ above with extra info.
