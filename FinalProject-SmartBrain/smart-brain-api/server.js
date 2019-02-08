@@ -12,10 +12,8 @@ const profile = require('./controllers/profile');
 const db = knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
-      user : 'postgres',
-      password : 'test',
-      database : 'smartbrain'
+      connectionString: process.env.DATABASE_URL,
+      ssl: true,
     }
 });
 
@@ -25,15 +23,15 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.listen(8080, () => {
-    console.log("Listening..");
+app.listen(process.env.PORT || 8080, () => {
+    console.log(`Listening on port ${process.env.port}` );
 });
 
 // This should not be here anymore, but leaving incase of future
 // updates to course that changes it.
-// app.get('/', (req, res) => {
-//     res.send(database.users);
-// });
+app.get('/', (req, res) => {
+    res.send('it is working');
+});
 
 // can move arrow functions to inside the controller
 app.put('/image', image.handleImagePut(db))

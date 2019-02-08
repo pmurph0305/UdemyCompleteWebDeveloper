@@ -1,0 +1,16 @@
+{
+  "name": "section28-production-deployment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "cross-env": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env PORT=3001 DATABASE_URL='abc' node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
