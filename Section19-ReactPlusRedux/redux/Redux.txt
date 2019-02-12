@@ -1,0 +1,31 @@
+-State management. Removes state from components of react into a global state that is passed down as props to react components.
+Helps with mananging state across many different react components.
+
+
+Why redux?
+
+- good at managing large state. React is a view layer, so redux helps manage the state.
+- useful for sharing data between containers.
+- predicatable state management using 3 principles:
+	- Single source of truth. (One single big object that describes entire state)
+	- State is read only. (Immutability. Prevents unexpected errors)
+	- Changes using pure functions. (Same output always with same input)
+
+(MVC Action -> Controller -> Several Models -> Several Views)
+Issues when controller changes different pieces of the model, which change the view which change the model etc.
+
+(Flux Pattern action -> dispatcher -> store -> view)
+Action -> (middleware) -> Reducer -> Store -> Make changes
+
+Action: things the user does, ie clicking
+Reducer: Pure function that recieves the input and creates an output.
+Store: the entire state of the app.
+Make changes: with the store changed, react is updated.
+
+
+Many different quick actions can cause problems with making changes without the intermediate steps above.
+In redux these actions all go through the reducer, which always produces the same output.
+Better scalability and easier to reason about and understand.
+
+Caveat: Can have redux with the state, but can have react components with state as well. Can use them together.
+
