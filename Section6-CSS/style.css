@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url(backgroundimage.jpg);
+    background-image: url(backgroundimage.jpg)
     background-size: cover;
     color: whitesmoke;
 }
